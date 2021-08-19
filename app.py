@@ -42,15 +42,15 @@ def handle_message(event):
     msg = event.message.text
     rmsg = '哈囉，聽不懂你在說甚麼~'
 
-    if "圖" or "貼圖" in msg:
-        sticker_msg = StickerMessage(
-            package_id="2",
-            sticker_id="23",
-        )
-        line_bot_api.reply_message(
-            event.reply_token,
-            sticker_msg)
-        return
+    # if "圖" or "貼圖" in msg:
+    #     sticker_msg = StickerMessage(
+    #         package_id="2",
+    #         sticker_id="23",
+    #     )
+    #     line_bot_api.reply_message(
+    #         event.reply_token,
+    #         sticker_msg)
+    #     return
 
     if msg in ["hi", "Hi", "hello", "Hello"]:
         rmsg = "嗨，我是賈斯伯!"
