@@ -52,7 +52,7 @@ def handle_message(event):
             sticker_message)
         return
 
-    if msg in ["hi", "Hi", "hello", "Hello"]:
+    if msg in ["嗨", "hi", "Hi", "hello", "Hello"]:
         rmsg = "嗨，我是賈斯伯!"
     elif msg in ["ㄟ", "欸", "欸欸", "hey"]:
         rmsg = "幹嘛"
