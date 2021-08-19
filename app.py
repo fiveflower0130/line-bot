@@ -49,11 +49,13 @@ def handle_message(event):
         )
         line_bot_api.reply_message(
             event.reply_token,
-            StickerMessage)
+            sticker_msg)
         return
 
     if msg in ["hi", "Hi", "hello", "Hello"]:
         rmsg = "嗨，我是賈斯伯!"
+    elif msg in ["ㄟ", "欸", "hey"]:
+        rmsg = "幹嘛"
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=rmsg))
